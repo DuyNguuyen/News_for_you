@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign_in"/>
+
+    <EditText
+        android:id="@+id/edt_sign_in_email"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <EditText
+        android:id="@+id/edt_sign_in_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginx2"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_small"
+        android:maxLength="50"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="@+id/edt_sign_in_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_sign_in_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sign_in_email"/>
+
+    <TextView
+        android:id="@+id/tv_to_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginx2"
+        android:text="Quên mật khẩu?"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edt_sign_in_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sign_in_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_sign_in_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_sign_in_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sign_in_password"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/tv_dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginx3"
+        android:text="Bạn chưa có tài khoản?"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toStartOf="@+id/tv_to_sign_up"
+        app:layout_constraintStart_toStartOf="@+id/btn_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in" />
+
+    <TextView
+        android:id="@+id/tv_to_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginx2"
+        android:text="Đăng kí ngay"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sign_in"
+        app:layout_constraintStart_toEndOf="@id/tv_dont_have_account"
+        app:layout_constraintTop_toTopOf="@id/tv_dont_have_account" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
