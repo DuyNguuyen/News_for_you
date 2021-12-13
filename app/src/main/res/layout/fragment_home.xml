@@ -15,7 +15,7 @@
         app:civ_border_color="@color/white"
         app:civ_border_width="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tv_welcome"
@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/profile_image"
         app:layout_constraintEnd_toStartOf="@+id/ib_menu_hamburger"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+        app:layout_constraintTop_toTopOf="@+id/profile_image"/>
 
     <ImageButton
         android:id="@+id/ib_menu_hamburger"
@@ -41,7 +41,7 @@
         android:src="@drawable/menu_hamburger"
         app:layout_constraintBottom_toBottomOf="@+id/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+        app:layout_constraintTop_toTopOf="@+id/profile_image"/>
 
     <EditText
         android:id="@+id/edt_search"
@@ -74,5 +74,4 @@
         app:layout_constraintBottom_toBottomOf="@+id/edt_search"
         app:layout_constraintEnd_toEndOf="@+id/edt_search"
         app:layout_constraintTop_toTopOf="@+id/edt_search" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
